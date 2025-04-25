@@ -8,7 +8,7 @@ Price = int(input("Ingrese el precio de la unidad: "))
 # igual a cero vuelve a entrar en el ciclo
 while Price <= 0:
     print("El precio de la unidad no es valido")
-    Price = int(input("Ingrese el precio de la unidad: "))
+    Price = int(input("Ingrese otra vez el precio de la unidad: "))
 
 #se le pide al usuario que ingrese la cantidad de productos que desea llevar
 Quantity = int(input("Ingrese la cantidad: "))
@@ -17,7 +17,7 @@ Quantity = int(input("Ingrese la cantidad: "))
 # y si el parametro no es valido vuelve a entrar en el ciclo
 while Quantity <= 0:
     print ("la cantidad no cumple los parametros")
-    Quantity = int(input("Ingrese la cantidad: "))
+    Quantity = int(input("Ingrese otra vez la cantidad: "))
 
 #se le pide al usuario que ingrese el descuento
 perDisc = int(input("Ingrese el descuento: "))
@@ -26,7 +26,7 @@ perDisc = int(input("Ingrese el descuento: "))
 
 while perDisc < 0 or perDisc >= 100:
     print ("El descuento no cumple los parametros")
-    perDisc = int(input("Ingrese el descuento: "))
+    perDisc = int(input("Ingrese otra vez el descuento: "))
 
 #se crea una variable para calcular el precio por la cantidad
 
