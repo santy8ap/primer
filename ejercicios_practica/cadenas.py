@@ -57,3 +57,32 @@ print("el precio es: " + precio[:precio.find('.')], 'euros y', precio[precio.fin
 
 
 #Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año.
+
+fecha = input("introduce tu fecha de nacimiento en formato dia/mes/año: ")
+dia = fecha [:fecha.find('/')]
+mes_a = fecha [:fecha.find('/')+1:]
+mes =  mes_a [:mes_a.find('/')]
+year = mes_a [:mes_a.find('/') +1]
+print('dia', dia)
+print('mes', mes)
+print('año', year)
+
+
+#Escribir un programa que pregunte por consola por los productos de una cesta de la compra,
+#  separados por comas, y muestre por pantalla cada uno de los productos en una línea distinta.
+
+cesta = input('Introduce los productos de la cesta de la compra separados por comas: ')
+print(cesta.replace(',', '\n'))
+
+
+
+#Escribir un programa que pregunte el nombre el un producto, su precio y un número de unidades y muestre por pantalla una cadena con el siguiente formato:
+
+#<producto>: <unidades> unidades x <precio>€ = <total>€
+
+#donde <unidades> es el número de unidades con cinco dígitos, <precio> es el precio unitario con 6 dígitos enteros y 2 decimales y <total> es el coste total con 8 dígitos enteros y 2 decimales.
+
+producto = input('Introduce el nombre del producto: ')
+precio = float(input('Introduce el precio unitario: '))
+unidades = int(input('Introduce el numero de unidades: '))
+print('{producto}: {unidades:3d} unidades x {precio:9.2f}€ = {total:11.2f}€'.format(producto = producto, unidades = unidades, precio = precio, total = unidades * precio))
