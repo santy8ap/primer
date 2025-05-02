@@ -1,25 +1,36 @@
-def determine_pass_status():
-    grade = float(input("Ingresar una calificacion entre 0 a 100: "))
-    if grade >= 60:
-        print("aprobado!")
+def determinar_estado_de_aprobacion ():
+    while True:
+        try:
+            #pedirle al ususario un numero para la calificacion de 0 hasta 100
+            calificacion = float(input("Ingresa una calificacion entre 0 y 100: "))
+            #validar que la calificacion este en el rango de 0 a 100
+            if 0 <= calificacion >= 100:
+                break #si la calificacion es valida salimos del bucle
+            else:
+                print("por favor, ingrese un numero valido de 0 a 100")
+        except ValueError:
+            #en caso de que el usuario ingrese un valor no numerico, mostrar un mensaje de error
+             print("por favor, ingrese un numero valido")
+
+    #ahora se evalua la calificacion si la calificacion es mayor a 70 aprueba, sino reprueba
+    if calificacion >= 70:
+        print("!Aprobado, felicitaciones!")
     else:
-        print("reprobado")
+        print("Reprobaste, lo siento")
 
-def calculate_average():
-    grades_input = input("Ingresa las calificaciones separadas por coma: ")
-    grades = [float(x) for x in grades_input.split(",")]
-    average = sum(grades) / len(grades)
-    print("El promedio es: ", average)
-
-
-def count_greater_than():
-    threshold = float(input("Ingresa un valor para comprar: "))
-    grades_input = input("Ingresa las calificaciones separadas por comas: ")
-    grades = [float(x) for x in grades_input.split(",") ]
-    count = sum(1 for grade in grades if grade > threshold)
-    print("Hay",count, "calificaiones mayores que", threshold)
-
-
-def count_specific_grade():
-    scpecific_grade = float(input("Ingresa la calificacion que deseas contar: "))
-    grades_input = input("Ingresa las ca")
+#funsion para contar cuantas calificaciones son mayores que un valor especifico
+def calcular_promedio ():
+    while True:
+        try:
+        #solicitar al usuario un valor umbral para comparar
+            calificaciones_entrada = input("ingrese las calificaciones separadas por coma: ")
+        #convertir la entrada en una lista de numeros flotantes
+            calificaciones = [float(x) for x in calificaciones_entrada.split(",")]
+        #validar que la lista de calificaciones no este vacia
+            if len (calificaciones) > 0:
+                break #si la lista tiene elementos, salimos del bucle
+            else:
+                print("no puedes hacer una lista, sino ingresas las calificaciones")
+        except ValueError:
+        #si el usuario ingresa valores no numericos, sacar error
+            print("por favor ingrese solo numeros")
