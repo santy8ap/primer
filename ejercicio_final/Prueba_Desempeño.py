@@ -1,6 +1,11 @@
-print("Hola nuevo usuaeio Bienvenido a este programa 😸")
-print(f"Si es tu primera vez en este programa es necesario"
-"\nQue ingreses minimo 5 productos para iniciar con tu tienda")
+input("Hola nuevo usuario Bienvenido a este programa 😸(Enter para continuar): ")
+inicio = input("Es tu primera vez utilizando este programa?(Y) O (N)").lower()
+if inicio == 'Y':
+    print("ingreses minimo 5 productos para iniciar con tu tienda 😉: ")
+elif inicio == 'N':
+    print("Bienvenido Usuari@")
+else:
+    print("Respuesta no valida")
 
 
 #List
