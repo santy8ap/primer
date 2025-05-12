@@ -72,7 +72,3 @@ No es magia, ni reemplaza al entrenador humano, pero si puede ser como ese compa
 > Porque al final, no se trata de levantar por levantar, sino de entrenar **inteligente** y con sentido. Y si hay una herramienta que puede ayudarte a mejorar, ¿por qué no usarla?
 
 ---
-
-## Tiempo estimado
-
-30 a 45 mins para escribir este readme (mas o menos)
