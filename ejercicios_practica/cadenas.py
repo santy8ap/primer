@@ -129,6 +129,11 @@
 #     print(f"la lista de notas ingresadas {lista}")
 #     print(f"el promedio de las notas es: {mean(lista): .2f}")
 
+from pickle import TRUE
+
+from ejercicios_practica import practicando2
+
+
 def main():
     print("Pares e impares")
     
@@ -153,3 +158,106 @@ def main():
         
 if __name__ == "__main__":
     main()
+
+#esto es un comentario
+
+#tipos de variables
+
+caja1 = 123456
+caja1 = 3.1415
+caja1 = True
+Caja1 = "The cake is lie"
+
+
+#si las variables tienen numeros
+
+numero1 = 8
+numero2 = 2
+
+suma = numero1 + numero2
+resta = numero1 - numero2
+multiplicacion = numero1 * numero2
+division = numero1 / numero2
+
+#si la vasriables son tipo str
+
+palabra1 = "El pastel"
+palabra2 = "es mentira"
+
+frase = palabra1 + palabra2
+
+#funciones
+#nombrefuncion (argumento1, arguemento2, argumento3 ..... argumentoN)
+
+print("Alabado seas mi  jesus")
+print(2025)
+print(1.1416)
+print(False)
+print(numero1, numero2)
+print(suma, resta, multiplicacion, division)
+print(frase)
+
+#funcion suma
+
+def suma  (num1, num2):
+    return num1 + num2
+print(suma(5,3))
+
+
+numero1 = 5
+numero2 = 4
+
+print("La suma de",numero1,"y",numero2,"es",suma(numero1,numero2))
+
+
+#Funcion media
+
+def mediaNumeros(num1, num2):
+    media = num1 + num2
+    media = media/2
+    return media
+
+
+print(mediaNumeros(5,2))
+
+#funcion insulta
+
+def insulta(nombre):
+    print(nombre,"es una persona de dudosa inteligencia")
+
+insulta("BitBoss")
+
+#lista
+
+fibonaci = [0,12,32,43,78,45,78,34]
+
+ 
+
+print(fibonaci[3])
+print(fibonaci[5])
+
+cosas = [0,5,2,True,"mac"]
+
+print(cosas[0],cosas[3],cosas[1],cosas[0])
+print(cosas)
+
+print(len(cosas))
+
+#metodos
+
+print("Antes", fibonaci)
+fibonaci.append(91)
+print("Despues de apped",fibonaci)
+
+fibonaci.insert(7,True)
+print("despues de inserte", fibonaci)
+
+#IF-ELSE
+
+#if ValorBolean:
+#   bloque de codigo
+
+insultado = True
+
+if insultado:
+    print("ey tu, si tu ven pa aca")

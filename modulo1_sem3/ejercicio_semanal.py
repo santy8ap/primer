@@ -32,6 +32,14 @@ def añadir_producto(nombre, precio, cantidad):
     inventario.append({"nombre": nombre, "precio": precio, "cantidad": cantidad})
     print(f"Producto '{nombre}' añadido al inventario.")
 
+def mostrar_productos():
+    if inventario:
+        print("Productos en el inventario:")
+        for producto in inventario:
+            print(f"Nombre: {producto['nombre']}, Precio: {producto['precio']}, Cantidad: {producto['cantidad']}")
+    else:
+        print("El inventario está vacío.")
+
 def buscar_producto(nombre):
     for producto in inventario:
         if producto["nombre"].lower() == nombre.lower():
@@ -64,7 +72,7 @@ if __name__ == "__main__":
     while True:
         print("\nOpciones:")
         print("1. Añadir producto")
-        print("2. Buscar producto")
+        print("2. Mostrar todos los productos")
         print("3. Actualizar precio")
         print("4. Eliminar producto")
         print("5. Calcular valor total del inventario")
@@ -72,19 +80,13 @@ if __name__ == "__main__":
         
         opcion = input("Seleccione una opción: ").strip()
 
-        
         if opcion == "1":
             nombre = nombre_producto()
             precio = solicitar_precio()
             cantidad = cantidad_productos()
             añadir_producto(nombre, precio, cantidad)
         elif opcion == "2":
-            nombre = input("Ingrese el nombre del producto a buscar: ").strip()
-            producto = buscar_producto(nombre)
-            if producto:
-                print(f"Producto encontrado: Precio = {producto['precio']}, Cantidad = {producto['cantidad']}")
-            else:
-                print("Producto no encontrado.")
+            mostrar_productos()
         elif opcion == "3":
             nombre = input("Ingrese el nombre del producto a actualizar: ").strip()
             nuevo_precio = solicitar_precio()
