@@ -129,135 +129,174 @@
 #     print(f"la lista de notas ingresadas {lista}")
 #     print(f"el promedio de las notas es: {mean(lista): .2f}")
 
-from pickle import TRUE
+# from pickle import TRUE
 
-from ejercicios_practica import practicando2
+# from ejercicios_practica import practicando2
 
 
-def main():
-    print("Pares e impares")
+# def main():
+#     print("Pares e impares")
     
-    numero_1 = int(input("Escriba un numero entero: "))
-    numero_2 = int(input(f"Escriba un numero entero o mayor o igual que {numero_1}: "))
+#     numero_1 = int(input("Escriba un numero entero: "))
+#     numero_2 = int(input(f"Escriba un numero entero o mayor o igual que {numero_1}: "))
 
 
 
-    while True:
-        if numero_2 < numero_1:
-            print(f"El numero que ingresaste no es mayor que {numero_1}")
-            numero_2 = int(input("Inténtelo otra vez, ingrese un número entero mayor o igual que el primero: "))
+#     while True:
+#         if numero_2 < numero_1:
+#             print(f"El numero que ingresaste no es mayor que {numero_1}")
+#             numero_2 = int(input("Inténtelo otra vez, ingrese un número entero mayor o igual que el primero: "))
 
-        else:
-            for i in range(numero_1, numero_2 + 1):
-                if i % 2 == 0:
-                    print(f"EL NUMERO {i} ES PAR")
-                    numero_1 = int(input("Escriba otro numero entero: "))
-                else:
-                    print(f"EL NUMERO {i} ES IMPAR")
-                    numero_1 = int(input("Escriba otro numero entero: "))
+#         else:
+#             for i in range(numero_1, numero_2 + 1):
+#                 if i % 2 == 0:
+#                     print(f"EL NUMERO {i} ES PAR")
+#                     numero_1 = int(input("Escriba otro numero entero: "))
+#                 else:
+#                     print(f"EL NUMERO {i} ES IMPAR")
+#                     numero_1 = int(input("Escriba otro numero entero: "))
         
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
-#esto es un comentario
+# #esto es un comentario
 
-#tipos de variables
+# #tipos de variables
 
-caja1 = 123456
-caja1 = 3.1415
-caja1 = True
-Caja1 = "The cake is lie"
-
-
-#si las variables tienen numeros
-
-numero1 = 8
-numero2 = 2
-
-suma = numero1 + numero2
-resta = numero1 - numero2
-multiplicacion = numero1 * numero2
-division = numero1 / numero2
-
-#si la vasriables son tipo str
-
-palabra1 = "El pastel"
-palabra2 = "es mentira"
-
-frase = palabra1 + palabra2
-
-#funciones
-#nombrefuncion (argumento1, arguemento2, argumento3 ..... argumentoN)
-
-print("Alabado seas mi  jesus")
-print(2025)
-print(1.1416)
-print(False)
-print(numero1, numero2)
-print(suma, resta, multiplicacion, division)
-print(frase)
-
-#funcion suma
-
-def suma  (num1, num2):
-    return num1 + num2
-print(suma(5,3))
+# caja1 = 123456
+# caja1 = 3.1415
+# caja1 = True
+# Caja1 = "The cake is lie"
 
 
-numero1 = 5
-numero2 = 4
+# #si las variables tienen numeros
 
-print("La suma de",numero1,"y",numero2,"es",suma(numero1,numero2))
+# numero1 = 8
+# numero2 = 2
+
+# suma = numero1 + numero2
+# resta = numero1 - numero2
+# multiplicacion = numero1 * numero2
+# division = numero1 / numero2
+
+# #si la vasriables son tipo str
+
+# palabra1 = "El pastel"
+# palabra2 = "es mentira"
+
+# frase = palabra1 + palabra2
+
+# #funciones
+# #nombrefuncion (argumento1, arguemento2, argumento3 ..... argumentoN)
+
+# print("Alabado seas mi  jesus")
+# print(2025)
+# print(1.1416)
+# print(False)
+# print(numero1, numero2)
+# print(suma, resta, multiplicacion, division)
+# print(frase)
+
+# #funcion suma
+
+# def suma  (num1, num2):
+#     return num1 + num2
+# print(suma(5,3))
 
 
-#Funcion media
+# numero1 = 5
+# numero2 = 4
 
-def mediaNumeros(num1, num2):
-    media = num1 + num2
-    media = media/2
-    return media
+# print("La suma de",numero1,"y",numero2,"es",suma(numero1,numero2))
 
 
-print(mediaNumeros(5,2))
+# #Funcion media
 
-#funcion insulta
+# def mediaNumeros(num1, num2):
+#     media = num1 + num2
+#     media = media/2
+#     return media
 
-def insulta(nombre):
-    print(nombre,"es una persona de dudosa inteligencia")
 
-insulta("BitBoss")
+# print(mediaNumeros(5,2))
 
-#lista
+# #funcion insulta
 
-fibonaci = [0,12,32,43,78,45,78,34]
+# def insulta(nombre):
+#     print(nombre,"es una persona de dudosa inteligencia")
+
+# insulta("BitBoss")
+
+# #lista
+
+# fibonaci = [0,12,32,43,78,45,78,34]
 
  
 
-print(fibonaci[3])
-print(fibonaci[5])
+# print(fibonaci[3])
+# print(fibonaci[5])
 
-cosas = [0,5,2,True,"mac"]
+# cosas = [0,5,2,True,"mac"]
 
-print(cosas[0],cosas[3],cosas[1],cosas[0])
-print(cosas)
+# print(cosas[0],cosas[3],cosas[1],cosas[0])
+# print(cosas)
 
-print(len(cosas))
+# print(len(cosas))
 
-#metodos
+# #metodos
 
-print("Antes", fibonaci)
-fibonaci.append(91)
-print("Despues de apped",fibonaci)
+# print("Antes", fibonaci)
+# fibonaci.append(91)
+# print("Despues de apped",fibonaci)
 
-fibonaci.insert(7,True)
-print("despues de inserte", fibonaci)
+# fibonaci.insert(7,True)
+# print("despues de inserte", fibonaci)
 
-#IF-ELSE
+# #IF-ELSE
 
-#if ValorBolean:
-#   bloque de codigo
+# #if ValorBolean:
+# #   bloque de codigo
 
-insultado = True
+# insultado = True
 
-if insultado:
-    print("ey tu, si tu ven pa aca")
+# if insultado:
+#     print("ey tu, si tu ven pa aca")
+
+
+import random
+
+numero_secreto = random.randint(1,100)
+
+max_intentos = 10
+intentos=0
+
+print("Bienvenido al juego de adivinar el número")
+print("Tienes que adivinar un número entre 0 y 100:")
+print("Tendras 10 intentos. El sistema te dira si estas caliente o frio.")
+while intentos < max_intentos:
+    try:
+        numero_usuario= int(input(f"intento{intentos+1}/{max_intentos}-ingresa un numero: "))
+
+        if numero_usuario < 0 or numero_usuario > 100:
+          print("Por favor, Escribe un número de 0 a 100.\n")
+          continue
+        intentos+=1
+
+        if numero_usuario==numero_secreto:
+           print(f" ¡Felicidades! Adivinaste el número en {intentos} intento(s).")
+           break
+        else:
+            diferencia=abs(numero_usuario-numero_secreto)
+            if diferencia <=5:  
+             print("Muy caliente\n")
+            elif diferencia <=15:
+             print("Caliente\n")
+            elif diferencia <=30:
+             print("Frio\n")
+            else:
+             print("Muy frio\n")
+
+    except ValueError:
+     print("por favor ingresa solo numeros.\n")
+if intentos==max_intentos and numero_usuario != numero_secreto:
+         print(f"Has usado todos tus intentos. El número correcto era:{numero_secreto}")

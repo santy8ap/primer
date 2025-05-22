@@ -31,3 +31,5 @@ while 1:
     pygame.draw.circle(screen, white, (x,y), 8)
 
     pygame.display.flip()
+
+    pygame 

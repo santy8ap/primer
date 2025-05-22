@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "pokemon GB";
+    src: url("../fonts/Mignone.ttf")
+}
+html{
+    font-family: "pokemon GB";
+}
+body {
+    background-color: forestgreen;
+}
+
+.gato_1{
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    
+}
+
+.gato_2 {
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+ol {
+    color: aliceblue;
+}
+
+td {
+    color: aliceblue;
+}
+
+tr{
+    color: aliceblue;
+}
