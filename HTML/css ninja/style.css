@@ -1,0 +1,175 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #490043;
+    border-bottom: 1px solid #7e2424;
+}
+
+header p{
+    color: #ffffff;
+}
+
+h1 {
+    color: #e3e5f8bb;
+}
+
+
+section {
+    background-color: #490043;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(199, 185, 185);
+}
+
+h2 {
+    color: #eeff007a;
+    border-bottom: 1px solid #e68686;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+div {
+    color: rgb(0, 0, 0); 
+}
+
+
+.box {
+    background-color: #ffffff75; 
+    border: 2px solid #ffffff; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 4px; 
+    text-align: center;
+}
+
+
+.highlight {
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+}
+
+
+#special {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    box-shadow: 5px 5px 15px rgba(128, 0, 128, 0.7); 
+}
+
+
+.custom-style-box {
+    background-color: #e0f7fa;
+  
+    padding: 25px; 
+    margin: 15px; 
+}
+
+.content { 
+    width: auto; 
+    padding: 20px;
+    margin: 10px auto; 
+    border: 1px solid ; 
+}
+
+
+.inline-block-element {
+    display: inline-block; 
+    width: 100px; 
+    height: 100px; 
+    background-color: rgb(0, 191, 255); 
+    margin: 10px;
+    text-align: center;
+    line-height: 100px; 
+    border-radius: 5px;
+}
+
+.fixed-element {
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    background-color: rgba(255, 255, 255, 0.568);
+    color: white;
+    padding: 10px; 
+    border-radius: 5px;
+    z-index: 1000; 
+    font-size: 0.9em;
+}
+
+
+
+/* Transformaciones */
+.rotate-box {
+    width: 100px; 
+    height: 100px; 
+    background-color: yellow; 
+    transform: rotate(45deg);
+    margin: 20px; 
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.rotate-box:hover { 
+    transform: rotate(90deg) scale(1.1); 
+    background-color: orange;
+}
+
+
+.hover-link {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hover-link:hover {
+    color: orange; 
+    text-decoration: underline; 
+}
+
+
+.box::before { 
+    content: "NEW! "; 
+    color: rgb(251, 255, 0); 
+    font-weight: bold; 
+    margin-right: 5px;
+}
+
+
+.animated-box {
+    animation: fade 2s ease-in-out forwards; 
+
+}
+
+@keyframes fade { 
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    border-top: 1px solid #ccc;
+    color: #555;
+    font-size: 0.9em;
+}
