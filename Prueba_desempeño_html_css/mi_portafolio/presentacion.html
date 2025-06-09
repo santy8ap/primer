@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog personal</title>
+    <link rel="stylesheet" href="style_blog.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo"><a href="index.html">Blog personal</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main class="container">
+        <section class="hero">
+                <h1>Hola soy santy</h1>
+                <p>Tengo 18 años desde los 14 he tenido un gusto por las computadoras soy un chico bastante tranquilo y algunas veces timido me gusta estar solo
+                    de vez en cuando, soy bastante risueño, alegre y nunca te sacare una mala cara, me gusta trabajar en equipo ademas de que soy bastante apasiado
+                    con los videojuegos mi color favorito es el cafe igual que mi bebida favorita y siempre estare disponible para ti.
+                </p>
+                <img src="/Prueba_desempeño_html_css/mi_portafolio/img/yoi.jpeg" alt="" class="yo">
+        </section>
+    </main>
+
+    <h1>Mis series favoritas y pasatiempos</h1>
+    <br><br>
+
+     <section>
+       
+      <div class="carousel" data-carousel>
+        <button class="carousel-button" data-carousel-btn="prev">
+          &#10094;
+        </button>
+        <button class="carousel-button" data-carousel-btn="next">
+          &#10095;
+        </button>
+        <ul data-carousel-slides>
+          <li class="slide" data-carousel-slide data-active>
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/demon.jpg"/>
+            <div class="centered" style="color: black">
+            </div>
+          </li>
+          <li class="slide" data-carousel-slide>
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/dragon.jpg"
+              alt="image-2"
+            />
+            <div class="centered">
+            </div>
+          </li>
+          <li class="slide" data-carousel-slide>
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/kaguya-sama-love-is-war-3840x2160-23090.jpg"
+              />
+            <div class="centered">
+            </div>
+          </li>
+            </li>
+          <li class="slide" data-carousel-slide>
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/calvo.jpg"
+              />
+            <div class="centered">
+            </div>
+          </li>
+           <li class="slide" data-carousel-slide>
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/minero.jpg"
+              />
+            <div class="centered">
+            </div>
+          </li>
+         
+             <li class="slide" data-carousel-slide>
+             
+            <img
+              src="/Prueba_desempeño_html_css/mi_portafolio/img/pi.jpg"
+              />
+              
+            <div class="centered">
+            </div>
+          </li>
+        </ul>
+        <ul data-carousel-dots>
+          <li data-carousel-dot data-active></li>
+          <li data-carousel-dot></li>
+          <li data-carousel-dot></li>
+        </ul>
+      </div>
+    </section>
+    <!-- script Carusel media tecncia -->
+    <script>
+        const buttons = document.querySelectorAll("[data-carousel-btn]");
+const dots = document.querySelectorAll("[data-carousel-dot]");
+
+function slide(button) {
+  return () => {
+    const offset = button.dataset.carouselBtn === "next" ? 1 : -1;
+    const slidesContainer = button
+      .closest("[data-carousel]")
+      .querySelector("[data-carousel-slides");
+    const slides = slidesContainer.querySelectorAll("[data-carousel-slide]");
+    const activeSlide = slidesContainer.querySelector("[data-active]");
+    const activeSlideIndex = [...slides].indexOf(activeSlide);
+    const nextSlideIndex = activeSlideIndex + offset;
+    switch (nextSlideIndex) {
+      case -1:
+        moveDot(2)();
+        break;
+      case 1:
+        moveDot(1)();
+        break;
+      case 2:
+        moveDot(2)();
+        break;
+      default:
+        moveDot(0)();
+        break;
+    }
+    if (nextSlideIndex < 0) {
+      slides[slides.length + nextSlideIndex].dataset.active = true;
+      return delete activeSlide.dataset.active;
+    }
+    if (nextSlideIndex >= slides.length) {
+      slides[0].dataset.active = true;
+      return delete activeSlide.dataset.active;
+    }
+    slides[nextSlideIndex].dataset.active = true;
+    return delete activeSlide.dataset.active;
+  };
+}
+
+function moveDot(i) {
+  return () => {
+    const dot = dots[i];
+    dots.forEach((d) => "active" in d.dataset && delete d.dataset.active);
+    dot.dataset.active = true;
+  };
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  buttons.forEach((button) => button.addEventListener("click", slide(button)));
+  setInterval(() => {
+    slide(buttons[1])();
+  }, 5500);
+});
+    </script>
+
+    <br><br>
+
+      <footer>
+    <p>&copy; 2025 Ochoa. Todos los derechos reservados.</p>
+    <a href="https://github.com/santy8ap"><img src="/Prueba_desempeño_html_css/mi_portafolio/img/github.png" alt=""></a>
+    <a href="discordapp.com/users/1021569614636920913"><img src="/Prueba_desempeño_html_css/mi_portafolio/img/discord.png" alt=""></a>
+    <a href="https://wa.link/889kdg"><img src="/Prueba_desempeño_html_css/mi_portafolio/img/whatsapp.png" alt=""></a>
+     <a href="https://id.unity.com/es/organizations/santy8aposso"><img src="/Prueba_desempeño_html_css/mi_portafolio/img/unity.png" alt=""></a>
+
+  </footer>
+
+</body>
+</html>
